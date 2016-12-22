@@ -30,13 +30,15 @@
         <table class="table">
           <tbody>
           <tr>
-            <td>姓名</td>
+            <td><strong>姓名</strong></td>
             <td><strong>Codeforces(Rating)</strong></td>
           </tr>
+          {% for item in datas %}
           <tr>
-            <td>Desgard_Duan</td>
-            <td>1348</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.codeforces_rating }}</td>
           </tr>
+          {% endfor %}
         </tbody>
         </table>
       </div>
