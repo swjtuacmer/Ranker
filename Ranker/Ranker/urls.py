@@ -20,4 +20,5 @@ from RankList import views as RankerListViews
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', RankerListViews.RankPage, name='RankPage'),
+    url(r'^updatedb/', RankerListViews.UpdateDB)
 ]

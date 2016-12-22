@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e70a5f3-1663-4a24-8fe6-00e75f80a2ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ranker/db.sqlite3" afterPath="$PROJECT_DIR$/Ranker/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ranker/RankList/templates/RankPage.html" afterPath="$PROJECT_DIR$/Ranker/RankList/templates/RankPage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ranker/RankList/views.py" afterPath="$PROJECT_DIR$/Ranker/RankList/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ranker/Ranker/urls.py" afterPath="$PROJECT_DIR$/Ranker/Ranker/urls.py" />
     </list>
     <ignored path="Ranker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="107">
-      <file leaf-file-name="RankPage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RankPage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ranker/RankList/templates/RankPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50955415">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -46,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ranker/RankList/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.1863354">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
                 <element signature="e#14#50#0" expanded="true" />
               </folding>
@@ -62,8 +61,10 @@
         <entry file="file://$PROJECT_DIR$/Ranker/Ranker/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-              <folding />
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <element signature="e#640#672#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,13 +97,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Ranker/common_static/framework/bower_components/jquery/src/css/var/swap.js" />
-        <option value="$PROJECT_DIR$/Ranker/Ranker/urls.py" />
         <option value="$PROJECT_DIR$/Ranker/RankList/templates/include/nav.html" />
         <option value="$PROJECT_DIR$/Ranker/RankList/static/css/main.css" />
         <option value="$PROJECT_DIR$/Ranker/Ranker/settings.py" />
         <option value="$PROJECT_DIR$/Ranker/RankList/models.py" />
-        <option value="$PROJECT_DIR$/Ranker/RankList/views.py" />
+        <option value="$PROJECT_DIR$/Ranker/Ranker/urls.py" />
         <option value="$PROJECT_DIR$/Ranker/RankList/templates/RankPage.html" />
+        <option value="$PROJECT_DIR$/Ranker/RankList/views.py" />
       </list>
     </option>
   </component>
@@ -701,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ranker/Ranker/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ranker/Ranker/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -727,21 +720,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ranker/RankList/views.py">
+    <entry file="file://$PROJECT_DIR$/Ranker/Ranker/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding>
-            <element signature="e#14#50#0" expanded="true" />
+            <element signature="e#640#672#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ranker/RankList/templates/RankPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50955415">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ranker/RankList/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1863354">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

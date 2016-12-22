@@ -9,4 +9,7 @@ def RankPage(request):
     users = User.objects.all()
     return render(request, 'RankPage.html', {'datas': users})
 
+def UpdateDB(request):
+    
+    return HttpResponse('success')
 
