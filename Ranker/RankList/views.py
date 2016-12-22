@@ -4,4 +4,3 @@ from django.shortcuts import render
 
 def RankPage(request):
     return render(request, 'RankPage.html')
-

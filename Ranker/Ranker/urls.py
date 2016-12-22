@@ -19,5 +19,5 @@ from RankList import views as RankerListViews
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^RankList/', RankerListViews.RankPage, name='RankPage'),
+    url(r'^$', RankerListViews.RankPage, name='RankPage'),
 ]
