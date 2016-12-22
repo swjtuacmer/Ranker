@@ -7,7 +7,9 @@ import json
 
 def RankPage(request):
     users = User.objects.all()
-    print users[0].name
-    return render(request, 'RankPage.html')
+    return render(request, 'RankPage.html', {'datas': users})
 
+def UpdateDB(request):
+    
+    return HttpResponse('success')
 

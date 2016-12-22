@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Ranker | An ACMer auto rank</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -30,13 +30,15 @@
         <table class="table">
           <tbody>
           <tr>
-            <td>姓名</td>
+            <td><strong>姓名</strong></td>
             <td><strong>Codeforces(Rating)</strong></td>
           </tr>
+          {% for item in datas %}
           <tr>
-            <td>Desgard_Duan</td>
-            <td>1348</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.codeforces_rating }}</td>
           </tr>
+          {% endfor %}
         </tbody>
         </table>
       </div>
