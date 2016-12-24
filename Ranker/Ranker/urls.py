@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', RankerListViews.RankPage, name='RankPage'),
     url(r'^about/', RankerListViews.about),
+    url(r'^add/', RankerListViews.Add),
     url(r'^updatedb/', RankerListViews.UpdateDB),
 ]
