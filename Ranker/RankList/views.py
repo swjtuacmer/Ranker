@@ -9,6 +9,9 @@ def RankPage(request):
     users = User.objects.order_by('-codeforces_rating')
     return render(request, 'RankPage.html', {'datas': users})
 
+def Add(request):
+    return render(request, 'add.html')
+
 def UpdateDB(request):
     users = User.objects.all()
     # print users
