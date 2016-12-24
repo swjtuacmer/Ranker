@@ -1,4 +1,5 @@
-# Ranker - 对 ACMer 进行实力排名
+
+![](Ranker-banner.png)
 
 ![](https://img.shields.io/badge/Python-2.7-green.svg)
 ![](https://img.shields.io/badge/Django-1.9.0-green.svg)
