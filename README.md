@@ -1,6 +1,8 @@
 
 ![](Ranker-banner.png)
 
+# Ranker - ACMer 实力评估系统
+
 ![](https://img.shields.io/badge/Python-2.7-green.svg)
 ![](https://img.shields.io/badge/Django-1.9.0-green.svg)
 ![](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
