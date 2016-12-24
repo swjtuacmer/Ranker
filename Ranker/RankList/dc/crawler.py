@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import urllib2
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -8,11 +7,12 @@ import re
 # 获取 codeforces rating 数据
 def UpdateCodeforces(codeforces_id):
     url = "http://codeforces.com/api/user.info?handles="
-    req = urllib2.Request(url + codeforces_id)
-    res_data = urllib2.urlopen(req)
-    res = res_data.read()
-    dic_res = json.loads(res)
-    res_rating = dic_res['result'][0]['rating']
+    try:
+        data = requests.get(url + codeforces_id)
+        dic_res = json.loads(data.text)
+        res_rating = dic_res['result'][0]['rating']
+    except:
+        res_rating = -1
     return res_rating
 
 # 获取 BestCoder rating 数据
@@ -25,7 +25,7 @@ def UpdateBestCoder(bestcoder_id):
         links = soup.find_all("td")[-1].string
         res_rating = int(links)
     except:
-        res_rating = 0
+        res_rating = -1
     return res_rating
 
 
@@ -41,7 +41,7 @@ def UpdateHduProblems(hdu_id):
         match = re.search(pattern, links)
         res_problems = int(match.group(2))
     except:
-        res_problems = 0
+        res_problems = -1
     return res_problems
 
 # 获取 POJ 数据
@@ -55,6 +55,6 @@ def UpdatePojProblems(poj_id):
         links = soup.find_all("td")[-2].string
         res_problems = int(links)
     except:
-        res_problems = 0
+        res_problems = -1
     return res_problems
 
