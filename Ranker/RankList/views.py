@@ -4,7 +4,7 @@ from django.shortcuts import render
 from models import User
 from dc import crawler
 
-
+# 页面处理部分
 def RankPage(request):
     users = User.objects.order_by('-codeforces_rating')
     return render(request, 'RankPage.html', {'datas': users})
@@ -12,6 +12,21 @@ def RankPage(request):
 def Add(request):
     return render(request, 'add.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+
+
+# 表单提交处理
+def AddUser(request):
+    user_name = request.GET['user_name']
+    codeforces_id = request.GET['codeforces_id']
+    hdu_id = request.GET['hdu_id']
+    poj_id = request.GET['poj_id']
+    print user_name, codeforces_id, hdu_id, poj_id
+    return HttpResponse('success')
+
+# 更新数据库操作
 def UpdateDB(request):
     users = User.objects.all()
     # print users
@@ -20,8 +35,3 @@ def UpdateDB(request):
         item.codeforces_rating = item_codeforces_rating
         item.save()
     return HttpResponse('success')
-
-def about(request):
-    return render(request, 'about.html')
-
-

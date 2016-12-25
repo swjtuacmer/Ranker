@@ -29,24 +29,25 @@
             </div><!--/.nav-colpse -->
         </div>
     </nav>
+
     <div class="container">
         <div class="form-template">
-            <form role="form">
+            <form role="form" action="/addone" method="get">
                 <div class="form-group">
                     <label for="">姓名*</label>
-                    <input type="text" class="form-control" placeholder="请输入真实姓名">
+                    <input type="text" class="form-control" placeholder="请输入真实姓名" name="user_name">
                 </div>
                 <div class="form-group">
                     <label for="">Codeforces id</label>
-                    <input type="text" class="form-control" placeholder="请输入 Codeforces id">
+                    <input type="text" class="form-control" placeholder="请输入 Codeforces id" name="codeforces_id">
                 </div>
                 <div class="form-group">
                     <label for="">HDU id</label>
-                    <input type="text" class="form-control" placeholder="请输入 HDU id">
+                    <input type="text" class="form-control" placeholder="请输入 HDU id" name="hdu_id">
                 </div>
                 <div class="form-group">
                     <label for="">POJ id</label>
-                    <input type="text" class="form-control" placeholder="请输入 POJ id">
+                    <input type="text" class="form-control" placeholder="请输入 POJ id" name="poj_id">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-default">提交</button>
@@ -55,6 +56,5 @@
             </form>
         </div>
     </div>
-
     </body>
 </html>

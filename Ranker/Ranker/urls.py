@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^about/', RankerListViews.about),
     url(r'^add/', RankerListViews.Add),
     url(r'^updatedb/', RankerListViews.UpdateDB),
+    url(r'^addone', RankerListViews.AddUser),
 ]
