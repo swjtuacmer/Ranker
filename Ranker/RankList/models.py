@@ -6,6 +6,9 @@ from django.db import models
 
 class User(models.Model):
     name = models.CharField(max_length = 30)
+    rank = models.IntegerField(null = True)
+    tot = models.FloatField(null = True)
+
     codeforces_id = models.CharField(max_length = 30, null = True)
     codeforces_rating = models.IntegerField(default = 0, null = True)
     bestcoder_id = models.CharField(max_length = 30, null = True)

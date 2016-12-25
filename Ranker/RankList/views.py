@@ -7,6 +7,10 @@ from dc import crawler
 # 页面处理部分
 def RankPage(request):
     users = User.objects.order_by('-codeforces_rating')
+    rank = 1
+    for item in users:
+        item.rank = rank
+        rank += 1
     return render(request, 'RankPage.html', {'datas': users})
 
 def Add(request):
@@ -23,7 +27,13 @@ def AddUser(request):
     codeforces_id = request.GET['codeforces_id']
     hdu_id = request.GET['hdu_id']
     poj_id = request.GET['poj_id']
-    print user_name, codeforces_id, hdu_id, poj_id
+    # print user_name, codeforces_id, hdu_id, poj_id
+    try:
+        user = User.objects.get(name=user_name)
+    except:
+        user = None
+    if user is None:
+        print "no one"
     return HttpResponse('success')
 
 # 更新数据库操作
