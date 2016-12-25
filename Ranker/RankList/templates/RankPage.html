@@ -18,13 +18,21 @@
         <table class="table">
           <tbody>
           <tr>
+            <td><strong>Rank</strong></td>
             <td><strong>姓名</strong></td>
             <td><strong>Codeforces(Rating)</strong></td>
+            <td><strong>Bestcoder(Rating)</strong></td>
+            <td><strong>HDU</strong></td>
+            <td><strong>POJ</strong></td>
           </tr>
           {% for item in datas %}
           <tr>
+            <td>{{ item.rank }}</td>
             <td>{{ item.name }}</td>
             <td>{{ item.codeforces_rating }}</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
           </tr>
           {% endfor %}
         </tbody>
