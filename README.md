@@ -21,6 +21,15 @@
 
 [A good tutorial of Django Dev.](http://www.ziqiangxuetang.com/django/django-tutorial.html)
 
+## The Dev. Flow
+
+* 开发方式与分支管理
+
+组内成员请在 `dev` 分支下进行开发。你可以细化功能，对 `dev` 分支进行分离，创建新的开发分支，命名为 `dev-[function name]` 。倘若非组内成员想发起 `pull request` ，请确定 base  为 `dev` 分支，否则不经 review 直接 close。
+
+* 接口的开发及后期的可移植性
+
+数据库暂时采用 `sqlite3` 由于我校需求量较小。由于 Django 1.7 之后的版本是自带 source 工具的，所以可迁移数据库。
 
 ## MIT License
 
