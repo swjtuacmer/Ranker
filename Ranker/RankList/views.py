@@ -43,5 +43,11 @@ def UpdateDB(request):
     for item in users:
         item_codeforces_rating = crawler.UpdateCodeforces(item.codeforces_id)
         item.codeforces_rating = item_codeforces_rating
+        item_bestcoder_rating = crawler.UpdateBestCoder(item.bestcoder_id)
+        item.bestcoder_rating = item_bestcoder_rating
+        item_hdu_problems = crawler.UpdateHduProblems(item.hdu_id)
+        item.hdu_problems = item_hdu_problems
+        item_poj_problems = crawler.UpdatePojProblems(item.poj_id)
+        item.poj_problems = item_poj_problems
         item.save()
     return HttpResponse('success')
